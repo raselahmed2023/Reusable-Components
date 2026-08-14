@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reusable UI Kit</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <p class="eyebrow">Week 5 · Frontend Web Development</p>
+      <h1>Reusable UI Component Kit</h1>
+      <p>
+        A small UI kit built with reusable Vanilla JavaScript functions.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Buttons -->
+    <section class="demo-section">
+      <div class="section-heading">
+        <span>01</span>
+        <div>
+          <h2>Buttons</h2>
+          <p>Reusable buttons with different variants and actions.</p>
+        </div>
+      </div>
+
+      <div id="button-demo" class="button-group"></div>
+    </section>
+
+    <!-- Cards -->
+    <section class="demo-section">
+      <div class="section-heading">
+        <span>02</span>
+        <div>
+          <h2>Cards</h2>
+          <p>The same card component receives different content.</p>
+        </div>
+      </div>
+
+      <div id="card-demo" class="card-grid"></div>
+    </section>
+
+    <!-- Modal -->
+    <section class="demo-section">
+      <div class="section-heading">
+        <span>03</span>
+        <div>
+          <h2>Modal</h2>
+          <p>Open reusable modal components with dynamic content.</p>
+        </div>
+      </div>
+
+      <div id="modal-demo" class="button-group"></div>
+    </section>
+
+    <!-- Toast -->
+    <section class="demo-section">
+      <div class="section-heading">
+        <span>04</span>
+        <div>
+          <h2>Toast Notifications</h2>
+          <p>
+            Toasts automatically dismiss and multiple notifications stack.
+          </p>
+        </div>
+      </div>
+
+      <div id="toast-demo" class="button-group"></div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="demo-section reflection-section">
+      <div class="section-heading">
+        <span>05</span>
+
+        <div>
+          <h2>Component Thinking Reflection</h2>
+        </div>
+      </div>
+
+      <p>
+        Thinking in components changed the way I structured my code because I
+        stopped creating every UI element separately. Instead, I created
+        reusable functions that receive data through parameters and generate
+        the required elements. This made my code more organized, reduced
+        repetition, and made it easier to update the UI. It also helped me
+        understand how reusable components and props work in frameworks like
+        React.
+      </p>
+    </section>
+  </main>
+
+  <!-- Toast container -->
+  <div
+    id="toast-container"
+    class="toast-container"
+    aria-live="polite"
+  ></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
